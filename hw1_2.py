@@ -1,6 +1,6 @@
-homework_grade = float(input("Enter homework grade:"))
-midterm_grade = float(input("Enter midterm grade:"))
-final_grade = float(input("Enter final grade:"))
+homework_grade = float(input("Enter Homework grade:"))
+midterm_grade = float(input("Enter Midterm grade:"))
+final_grade = float(input("Enter Final grade:"))
 
 homework_weight = .45
 midterm_weight = .25
