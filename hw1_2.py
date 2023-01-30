@@ -9,4 +9,4 @@ final_weight = .3
 calculated_grade = homework_grade * homework_weight + \
     midterm_grade*midterm_weight + final_grade*final_weight
 
-print('Your final grade is', round(final_grade,2))
+print('Your final grade is', round(calculated_grade,2))
