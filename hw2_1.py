@@ -1,4 +1,4 @@
-sale_amount = int(input("Enter the amount of sale: "))
+sale_amount = float(input("Enter the amount of sale: "))
 
 def calculate_discount(sale_amount):
     if sale_amount > 5000:
@@ -11,4 +11,4 @@ def calculate_discount(sale_amount):
         return sale_amount
 
 
-print("The final sale amount is $ ", calculate_discount(sale_amount))
+print("The final sale amount is $ ", "{:,.2f}".format(calculate_discount(sale_amount)))
