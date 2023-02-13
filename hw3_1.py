@@ -1,6 +1,6 @@
 """Name: Anthony Francisco
-Date: 2/6/23
-Title: Wagon Sales - Homework 2 - Programming in Python
+Date: 2/13/23
+Title: Wagon Sales - Homework 3 - Python Lists - CSC 110
 Description: This code asks the user to input the number of 
 wagons sold in each month of the year (from month 1 to month 12)
  and keeps track of the lowest and highest number of wagons 
@@ -44,5 +44,6 @@ for wagon in wagon_list:
 
 # Calculate the difference between the highest and lowest number of wagons sold
 difference = highest - lowest
+
 # Print the difference between the most wagons sold and the least wagons sold
 print("The difference between the most wagons sold and the least wagons sold is ", difference)
