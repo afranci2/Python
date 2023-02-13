@@ -7,4 +7,4 @@ for i in range(1,13):
     if wagon_count>highest:
         highest=wagon_count
 difference = highest-lowest
-print("The difference between the most wagons sold and the least wagons sold is: ", difference)
+print("The difference between the most wagons sold and the least wagons sold is ", difference)
