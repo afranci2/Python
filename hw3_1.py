@@ -16,7 +16,7 @@ wagons sold in each month of the year (from month 1 to month 12)
  new maximum. Finally, the code calculates the difference 
  between the highest and lowest number of wagons sold and prints 
  the result."""
- 
+
 # Initialize the variable 'lowest' to keep track of the lowest number of wagons sold
 lowest = 1000000
 # Initialize the variable 'highest' to keep track of the highest number of wagons sold
@@ -36,11 +36,11 @@ for wagon in wagon_list:
     # Check if the number of wagons sold in the current month is lower than the current value of 'lowest'
     if wagon < lowest:
         # Update the value of 'lowest' if the current number of wagons is lower
-        lowest = wagon_count
+        lowest = wagon
     # Check if the number of wagons sold in the current month is higher than the current value of 'highest'
     if wagon > highest:
         # Update the value of 'highest' if the current number of wagons is higher
-        highest = wagon_count
+        highest = wagon
 
 # Calculate the difference between the highest and lowest number of wagons sold
 difference = highest - lowest
