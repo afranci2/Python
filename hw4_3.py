@@ -31,7 +31,7 @@ def sumDigits(user_number):
     # Return the final sum of the digits
     return total_sum
 
-def DivideBySum(user_input):
+def sumDivisible(user_input):
     result = sumDigits(user_input)
     if (user_input%result==0):
         return True
