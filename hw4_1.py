@@ -36,5 +36,3 @@ def main():
     state_index = searchState(list_of_abb, target)
     higher_state_results = higherPopStates(list_of_abb, list_of_pop, state_index)
     printResults(list_of_abb, state_index, list_of_pop, higher_state_results)
-
-main()
