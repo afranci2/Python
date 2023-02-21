@@ -25,7 +25,7 @@ def searchState(list_of_abb, target):
     for i in range(len(list_of_abb)):
         if (list_of_abb[i]==target):
             target_index = i
-    if (target == -1):
+    if (target_index == -1):
         print("The state you entered is not valid")
     else:
         return target_index
@@ -50,7 +50,8 @@ def main():
     target = input("Enter a state to find population of: ")
     # Calls the searchState() function to find the index of the target state abbreviation in the list
     state_index = searchState(list_of_abb, target)
-    # Calls the higherPopStates() function to create a list of states with a higher population than the target state
-    higher_state_results = higherPopStates(list_of_abb, list_of_pop, state_index)
-    # Calls the printResults() function to output the population of the target state and the list of states with a higher population
-    printResults(list_of_abb, state_index, list_of_pop, higher_state_results)
+    if(state_index != None):
+        # Calls the higherPopStates() function to create a list of states with a higher population than the target state
+        higher_state_results = higherPopStates(list_of_abb, list_of_pop, state_index)
+        # Calls the printResults() function to output the population of the target state and the list of states with a higher population
+        printResults(list_of_abb, state_index, list_of_pop, higher_state_results)
