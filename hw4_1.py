@@ -27,8 +27,8 @@ def higherPopStates(list_of_abb, list_of_pop, state_index):
     return list_of_higher_states
 
 def printResults(list_of_abb, state_index, list_of_pop, higher_state_results):
-    print("The population of", list_of_abb[state_index], "is", list_of_pop[state_index])
-    print("The states with a higher population than", list_of_abb[state_index], " are:", higher_state_results)
+    print("The population of", list_of_abb[state_index], " is", list_of_pop[state_index])
+    print("The states with a higher population than", list_of_abb[state_index], "are:", higher_state_results)
 
 def main():
     list_of_abb, list_of_pop = getStates()
