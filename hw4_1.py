@@ -15,7 +15,10 @@ def searchState(list_of_abb, list_of_pop):
     for i in range(len(list_of_abb)):
         if (list_of_abb[i]==target):
             target_index = i
-    print("The population of", target, "is", list_of_pop[target_index])
+    if (target == -1):
+        print("The state you entered is not valid")
+    else:
+        print("The population of", target, "is", list_of_pop[target_index])
     return target_index
 
 def higherPopStates(list_of_abb, list_of_pop, state_index):
