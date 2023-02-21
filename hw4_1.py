@@ -9,7 +9,7 @@ def getStates():
         list_of_pop.append(state_pop)
     return list_of_abb, list_of_pop
 
-def searchState(list_of_abb):
+def searchState(list_of_abb, list_of_pop):
     target = input("Enter a state to find population of: ")
     target_index=-1
     for i in range(len(list_of_abb)):
