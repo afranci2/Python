@@ -28,12 +28,11 @@ def higherPopStates(list_of_abb, list_of_pop, state_index):
             list_of_higher_states.append(list_of_abb[i])
     return list_of_higher_states
 
-def printResults(list_of_abb, list_of_pop, state_index, higher_state_results):
-    new_state_index = int(state_index)
-    print("The states with a higher population than", list_of_abb[new_state_index], "are:", higher_state_results)
+def printResults(list_of_abb, state_index, higher_state_results):
+    print("The states with a higher population than", list_of_abb[state_index], "are:", higher_state_results)
 
 def main():
     list_of_abb, list_of_pop = getStates()
     state_index = searchState(list_of_abb, list_of_pop)
     higher_state_results = higherPopStates(list_of_abb, list_of_pop, state_index)
-    printResults(list_of_abb, list_of_pop, state_index, higher_state_results)
+    printResults(list_of_abb, state_index, higher_state_results)
