@@ -29,7 +29,7 @@ def higherPopStates(list_of_abb, list_of_pop, state_index):
     return list_of_higher_states
 
 def printResults(list_of_abb, list_of_pop, state_index, higher_state_results):
-    print("The states with a higher population than", list_of_abb[state_index], "are: ", higher_state_results)
+    print("The states with a higher population than", list_of_abb[int(state_index)], "are:", higher_state_results)
 
 def main():
     list_of_abb, list_of_pop = getStates()
