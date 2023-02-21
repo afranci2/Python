@@ -37,4 +37,3 @@ def main():
     higher_state_results = higherPopStates(list_of_abb, list_of_pop, state_index)
     printResults(list_of_abb, list_of_pop, state_index, higher_state_results)
 
-main()
