@@ -8,27 +8,26 @@ def getStates():
         state_pop = int(input("Enter state population: "))
         list_of_pop.append(state_pop)
     return list_of_abb, list_of_pop
+
 def searchState(list_of_abb, list_of_pop):
     target = input("Enter a state to find population of: ")
-    target_index=-1
     for i in range(len(list_of_abb)):
         if (list_of_abb[i]==target):
-            target_index=i
-    if (target_index != -1):
-        return list_of_pop[target_index]
+            return i
+    return -1
 
+def higherPopStates(list_of_abb, list_of_pop, state_index):
+    list_of_higher_states=[]
+    for i in range(len(list_of_pop)):
+        if (list_of_pop[i]>list_of_pop[state_index]):
+            list_of_higher_states.append(list_of_abb[i])
+    return list_of_higher_states
 
-
-
-def higherPopStates():
-    n=1
-def printResults():
-    n=1
+def printResults(list_of_abb, list_of_pop, state_index, higher_state_results):
+    print("The states with a higher population than", list_of_abb[state_index], "are: ", higher_state_results)
 
 def main():
     list_of_abb, list_of_pop = getStates()
-    searchState(list_of_abb, list_of_pop)
-    higherPopStates()
-    printResults()
-
-main()
+    state_index = searchState(list_of_abb, list_of_pop)
+    higher_state_results = higherPopStates(list_of_abb, list_of_pop, state_index)
+    printResults(list_of_abb, list_of_pop, state_index, higher_state_results)
