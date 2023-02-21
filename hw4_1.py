@@ -15,6 +15,7 @@ def searchState(list_of_abb, list_of_pop):
     for i in range(len(list_of_abb)):
         if (list_of_abb[i]==target):
             target_index = i
+    print("The population of", target, "is", list_of_pop[target_index])
     return target_index
 
 def higherPopStates(list_of_abb, list_of_pop, state_index):
@@ -32,3 +33,5 @@ def main():
     state_index = searchState(list_of_abb, list_of_pop)
     higher_state_results = higherPopStates(list_of_abb, list_of_pop, state_index)
     printResults(list_of_abb, list_of_pop, state_index, higher_state_results)
+
+main()
