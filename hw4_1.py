@@ -7,8 +7,7 @@ def getStates():
         list_of_abb.append(state_abb)
         state_pop = int(input("Enter state population: "))
         list_of_pop.append(state_pop)
-        target = input("Enter a state to find population of: ")
-
+    target = input("Enter a state to find population of: ")
     return list_of_abb, list_of_pop, target
 
 def searchState(list_of_abb, target):
