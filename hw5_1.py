@@ -24,13 +24,13 @@ def getData():
 
     line = dataFile.readline()
     while line != "":
+        line = dataFile.readline()
         line = line.strip()
         year, totalCSGrads, menCSGrads, womenCSGrads = line.split(",")
         yearList = yearList + [year]
         totalCSGradsList = totalCSGradsList + [totalCSGrads]
         menCSGradsList = menCSGradsList + [menCSGrads]
         womenCSGradsList = womenCSGradsList + [womenCSGrads]
-        line = dataFile.readline()
     dataFile.close()
 
     return (yearList,totalCSGradsList,menCSGradsList,womenCSGradsList)
