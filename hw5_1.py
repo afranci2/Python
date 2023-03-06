@@ -53,7 +53,7 @@ def getYears(yearList):
                 years.append(year1)
         valid=True
         if years[0]>years[1]:
-                print("year2 should be after year2, try again...")
+                print("year2 should be after year1, try again...")
                 valid=False
                 years=[]
     
