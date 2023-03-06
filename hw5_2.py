@@ -69,7 +69,7 @@ def getYears(yearList):
 
  #function that calculates and returns percentchange
 
-def percentChange(value1, value2):
+def percentChange(value2, value1):
     return ((value2-value1)/value1)
 
  #function that will compute the percent change of three values by the user inpute
@@ -80,7 +80,7 @@ def computePercentChange(year1, yearList, womenCSGradsList):
         if year1 == (yearList[i]):
             index1=i
         #uses previous function to computer perent change
-    womenCSGrad =percentChange(int(womenCSGradsList[index1]),int(womenCSGradsList[index1-1]))
+    womenCSGrad =percentChange(int(womenCSGradsList[index1-1]),int(womenCSGradsList[index1]))
     return womenCSGrad
     
 def outputFile(year1, womenCSGradsList, yearList):
