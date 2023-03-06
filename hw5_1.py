@@ -45,11 +45,11 @@ def getYears(yearList):
             if year1.isdigit() == False:
                 print("Invalid entry, try again...")
                 valid = False
-            year1=int(year1)
             if year1 not in yearList and valid!=False:
                 print("Year not in range, try again...")
                 valid = False
             if valid==True:
+                year1=int(year1)
                 years.append(year1)
         valid=True
         if years[0]>years[1]:
