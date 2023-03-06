@@ -27,10 +27,10 @@ def getData():
     while line != "":
         line = line.strip()
         year, totalCSGrads, menCSGrads, womenCSGrads = line.split(",")
-        yearList = yearList + [year]
-        totalCSGradsList = totalCSGradsList + int([totalCSGrads])
-        menCSGradsList = menCSGradsList + int([menCSGrads])
-        womenCSGradsList = womenCSGradsList + int([womenCSGrads])
+        yearList.append(int(year))
+        totalCSGradsList.append(int(totalCSGrads))
+        menCSGradsList.append(int(menCSGrads))
+        womenCSGradsList.append(int(womenCSGrads))
         line = dataFile.readline()
     dataFile.close()
     return (yearList,totalCSGradsList,menCSGradsList,womenCSGradsList)
@@ -45,6 +45,7 @@ def getYears(yearList):
             if year1.isdigit() == False:
                 print("Invalid entry, try again...")
                 valid = False
+            year1=int(year1)
             if year1 not in yearList and valid!=False:
                 print("Year not in range, try again...")
                 valid = False
