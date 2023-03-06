@@ -28,9 +28,9 @@ def getData():
         line = line.strip()
         year, totalCSGrads, menCSGrads, womenCSGrads = line.split(",")
         yearList = yearList + [year]
-        totalCSGradsList = totalCSGradsList + [totalCSGrads]
-        menCSGradsList = menCSGradsList + [menCSGrads]
-        womenCSGradsList = womenCSGradsList + [womenCSGrads]
+        totalCSGradsList = totalCSGradsList + int([totalCSGrads])
+        menCSGradsList = menCSGradsList + int([menCSGrads])
+        womenCSGradsList = womenCSGradsList + int([womenCSGrads])
         line = dataFile.readline()
     dataFile.close()
     return (yearList,totalCSGradsList,menCSGradsList,womenCSGradsList)
