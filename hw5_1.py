@@ -9,7 +9,7 @@ def getData():
     # The function should return the list of years, the list of winners and the list of losers
     goodFile = False
     while goodFile == False:
-        fname = input("Enter name of data file: ")
+        fname = input("Please enter the name of the data file: ")
         try:
             dataFile = open(fname, 'r')
             goodFile = True
@@ -40,7 +40,7 @@ def getYears(yearList):
     years = []
     while valid==False:
         while len(years)!= 2:
-            year1 = input("Input a year: ")
+            year1 = input("Enter a year: ")
             valid=True
             if year1.isdigit() == False:
                 print("Invalid entry, try again...")
