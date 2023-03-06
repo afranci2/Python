@@ -14,8 +14,7 @@ def getData():
             dataFile = open(fname, 'r')
             goodFile = True
         except IOError:
-            print("Invalid file, please try again...")
-            print(IOError)
+            print("Invalid file name, try again...")
     yearList = []
     totalCSGradsList = []
     menCSGradsList = []
