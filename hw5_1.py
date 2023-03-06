@@ -45,7 +45,7 @@ def getYears(yearList):
             if year1.isdigit() == False:
                 print("Invalid entry, try again...")
                 valid = False
-            if int(year1) not in yearList:
+            elif int(year1) not in yearList:
                 print("Year not in range, try again...")
                 valid = False
             if valid==True:
