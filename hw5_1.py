@@ -33,7 +33,6 @@ def getData():
         womenCSGradsList = womenCSGradsList + [womenCSGrads]
         line = dataFile.readline()
     dataFile.close()
-    print(yearList,totalCSGradsList,menCSGradsList,womenCSGradsList)
     return (yearList,totalCSGradsList,menCSGradsList,womenCSGradsList)
 
 def getYears(yearList):
